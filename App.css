@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.clear{
+    clear: both;
+}
+.App {
+    max-width:100%;
+    text-align: left;
+    color:black;
+}
+.logo-images{
+    margin-left: 20px;
+    padding-top: 5px;
+    border-radius: 50%;
+    float: left;
+    
+}
+.menu-itms{
+    max-width:70%;
+    margin-left: 2rem;
+    margin-top:2rem;
+    float: left;
+    
+}
