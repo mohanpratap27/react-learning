@@ -7,18 +7,22 @@ class App extends Component {
     this.state = {
       persons: [
         {
-          name: "demo One",
+          name: "John ",
+          age: "21",
         },
         {
-          name: "dmo Two",
-        },
-
-        {
-          name: "demo three",
+          name: "Roy",
+          age: "23",
         },
 
         {
-          name: "demo four",
+          name: "Lisa",
+          age: "22",
+        },
+
+        {
+          name: "Sana",
+          age: "24",
         },
       ],
       isShow: true,
@@ -28,10 +32,24 @@ class App extends Component {
   toggleHandler() {
     this.setState({ isShow: !this.state.isShow });
   }
+
+  removeHandler = (personIndex) => {
+    const persons = this.state.persons;
+    persons.splice(personIndex, 1);
+    this.setState({ persons: persons });
+  };
+
   render() {
     let persons;
     persons = this.state.persons.map((p, index) => {
-      return <Person key={index} name={p.name} />;
+      return (
+        <Person
+          key={index}
+          name={p.name}
+          age={p.age}
+          removeHandler={() => this.removeHandler(index)}
+        />
+      );
     });
 
     return (

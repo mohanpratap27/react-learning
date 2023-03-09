@@ -6,8 +6,15 @@
     clear: both;
 }
 .App {
-    max-width:100%;
-    text-align: left;
     
+    margin: auto;
     color:black;
+}
+.togglebtn{
+    margin-top: 20px;
+    margin-left: 160px;
+    margin-bottom: 20px;
+    width: 200px;
+    font-size: 25px;
+    text-align: center;
 }
