@@ -16,19 +16,35 @@ class App extends Component {
         {
           name: "demo three",
         },
-        {
-            name: "demo four",
-          },
-      ],
-    };
-  }
 
+        {
+          name: "demo four",
+        },
+      ],
+      isShow: true,
+    };
+    this.toggleHandler = this.toggleHandler.bind(this);
+  }
+  toggleHandler() {
+    this.setState({ isShow: !this.state.isShow });
+  }
   render() {
     let persons;
-    persons = this.state.persons.map((p) => {
-      return <Person name={p.name}/>
+    persons = this.state.persons.map((p, index) => {
+      return <Person key={index} name={p.name} />;
     });
-    return <div className="App">{persons}</div>
+
+    return (
+      <div className="App">
+        <button
+          className="btn btn-success togglebtn"
+          onClick={this.toggleHandler}
+        >
+          Click on Me
+        </button>
+        {this.state.isShow === true ? persons : ""}
+      </div>
+    );
   }
 }
 export default App;
