@@ -1,6 +1,7 @@
 import "./App.css";
 import React, { Component } from "react";
 import Person from "./components/person";
+import Form from "./components/Form";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -53,7 +54,7 @@ class App extends Component {
     });
 
     return (
-      <div className="App">
+      <div className="container App">
         <button
           className="btn btn-success togglebtn"
           onClick={this.toggleHandler}
@@ -61,6 +62,8 @@ class App extends Component {
           Click on Me
         </button>
         {this.state.isShow === true ? persons : ""}
+
+        <Form />
       </div>
     );
   }

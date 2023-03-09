@@ -6,15 +6,34 @@
     clear: both;
 }
 .App {
-    
     margin: auto;
+    text-align: center;
     color:black;
 }
 .togglebtn{
     margin-top: 20px;
-    margin-left: 160px;
     margin-bottom: 20px;
-    width: 200px;
+    max-width: 200px;
     font-size: 25px;
     text-align: center;
+}
+.formclass{
+    margin-left: 50px;
+    margin-top:50px ;
+}
+.formclass input{
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding-left:10px;
+}
+.formclass button {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: powderblue;
+    border-radius: 20px ;
 }
