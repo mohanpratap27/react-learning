@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    user-select: none;
 }
 .clear{
     clear: both;
@@ -28,12 +29,17 @@
     border: 1px solid black;
     padding-left:10px;
 }
-.formclass button {
-    width: 200px;
-    height: 40px;
+.formclass button:hover {
     font-size: 20px;
     margin-bottom: 20px;
     border: none;
-    background-color: powderblue;
+    color: lightcoral;
+    border-radius: 20px ;
+}
+.formclass button {
+    font-size: 20px;
+    margin-bottom: 20px;
+    border: none;
+    color: white;
     border-radius: 20px ;
 }
