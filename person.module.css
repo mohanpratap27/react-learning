@@ -1,0 +1,21 @@
+.maindiv{
+    max-width:500px;
+    border: 2px solid black;
+    color:rgb(147, 134, 134);
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    box-shadow: 0px 0px 10px rgb(45, 44, 44) ;
+}
+.clear{
+    clear: both;
+}
+.maindiv button{
+    background-color: whitesmoke;
+    color:black;
+    border: 1px solid black;
+    margin-top:20px;
+    
+}
